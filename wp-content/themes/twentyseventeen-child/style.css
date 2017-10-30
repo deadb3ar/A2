@@ -1,0 +1,16 @@
+/*
+Theme Name: twentyseventeen-child
+Theme URI: 
+Description: A child theme of twentyseventeen
+Author: 
+Author URI: 
+Template: twentyseventeen
+Version: 0.1.0
+*/
+
+.site-info {display:none;}
+
+label {font-weight: 600;}
+
+button, input[type="button"],input[type="submit"] {
+background-color: #666;}
