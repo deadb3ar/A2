@@ -8,9 +8,74 @@ Template: twentyseventeen
 Version: 0.1.0
 */
 
+/*removes Proudly powered by Wordpress line*/
 .site-info {display:none;}
 
+/*reduces line weight on contact form*/
 label {font-weight: 600;}
 
+/* changes search button color to a red*/
 button, input[type="button"],input[type="submit"] {
-background-color: #666;}
+background-color: #f66;}
+
+/* changes selected page color to red*/
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+    color: #f66;
+}
+
+/* This changes the titles of pages to be 3.5rem */
+.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+    color: #222;
+    font-size: 14px;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+	text-transform: uppercase;}
+
+/* changes styles on blog page specifically */
+.page-title {
+	border-bottom: 11px solid #f66;
+	font-size: 3.5rem;
+}
+
+/* changes the titles of posts color*/
+.entry-title a {
+	color: #f66;
+}
+
+/* changes social nav icon color*/
+.social-navigation a {
+    background-color: #f66;
+}
+
+/*increase wrapper width*/
+.wrap {
+	max-width: 1145px;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+/*matches top nav to wrapper width - maybe*/
+.navigation-top .wrap {
+	max-width: 1145px;
+}
+
+/* floats side bar to left*/
+ @media screen and (min-width: 48em) {
+ 	.has-sidebar #secondary {
+ 	float: left;
+ }
+ 	.has-sidebar #primary {
+ 	float: right;
+ }
+ 	.has-sidebar:not(.error404) #primary {
+ 	float: right;
+ }
+ }
+ 
+/* this will add a short underline that only underlines the text and not the whole block, but I need to figure out how to add <u></u> as a child of the blog page-title, since it's all dynamically generated it just writes it over, I used a plug-in to add javascript to the footer but I can't get it to work :(  */
+/*u {
+    border-bottom: 12px solid #f66;
+    text-decoration: none;
+}*/
+
